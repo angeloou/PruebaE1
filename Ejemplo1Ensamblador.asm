@@ -14,4 +14,11 @@ section .text
 ; etiqueta global 
 	global _start 	; propio de nasm
 	_start: 
-	
+
+	mov eax, 4	     ; llamada al sistema sys write
+	mov cbx, 1	     ; std out 
+	mov ecx, mensaje ; mensaje e pantalla
+	mov edx, len     ; longitud del mensaje
+
+	int 0x80	; Llamada al sistema de interrupciónes
+	mov eax, 1	; salir del programa 
