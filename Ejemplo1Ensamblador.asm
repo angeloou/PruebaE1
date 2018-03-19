@@ -20,5 +20,5 @@ section .text
 	mov ecx, mensaje ; mensaje e pantalla
 	mov edx, len     ; longitud del mensaje
 
+	mov eax, 1	; salir del programa, (pause, exit, sys_exit)
 	int 0x80	; Llamada al sistema de interrupciónes
-	mov eax, 1	; salir del programa 
