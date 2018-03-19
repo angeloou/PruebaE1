@@ -1,6 +1,6 @@
 section .data
 
-mensaje db "HOLA MUNDO !!!", 0xA, 0xD	; 10,13 espacio y salto
+mensaje db "HOLA MUNDO... BIENVENIDOS !!!", 0xA, 0xD	; 10,13 espacio y salto
 
 len equ $ - mensaje 	; directiva propio del ensamblador
 ; db byte 
